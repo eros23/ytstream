@@ -20,7 +20,7 @@ YOUTUBE_KEY="xxxx-xxxx-xxxx-xxxx-xxxx"
 ffmpeg -thread_queue_size 512 \
 -use_wallclock_as_timestamps 1 \
 -rtsp_transport tcp \
--i ${RTSP_URL} \
+-re -i ${RTSP_URL} \
 -i ${HOME}/audio.m4a \
 -c:v copy \
 -c:a copy \
