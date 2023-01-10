@@ -1,0 +1,13 @@
+[Unit]
+Description=Gestione flusso streaming per youtube.
+After=network.target
+
+[Service]
+User=pi
+Group=pi
+WorkingDirectory=/home/pi
+ExecStart=/home/pi/ytchecker.sh
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
