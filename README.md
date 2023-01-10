@@ -3,13 +3,13 @@
 
 Invia il tuo flusso streaming da una semplice telecamera di videosorveglianza.
 
-#Requisiti
+# Requisiti
 
 Installa ffmpeg su Debian/Ubuntu/Raspberry
 
 ```sudo apt install ffmpeg```
 
-##Installazione
+## Installazione
 
 Copia i file ffmpeg.sh e ytstream.sh nella caratella dove vuoi eseguire il tuo script, ad esemipio "/home/pi/" e assicurati di averere i permessi di esecuzione.
 
@@ -37,3 +37,4 @@ Abilita il servizio per avviarlo automaticamente all'avvio del sistema:
 Una volta configurate le variabili su ffmpeg.sh, avvia il servizio.
 
 ```sudo systemctl start ytstream.service```
+
